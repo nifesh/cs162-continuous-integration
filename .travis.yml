@@ -25,11 +25,11 @@ before_install:
 
 # command to install dependencies
 install:
-  - pip install -r tests/requirements.txt
+  - pip install -r web/requirements.txt
 
 before_script:
     # It seems to take a few seconds before flask / db accept connections, so let's snooze.
     - sleep 10
 # command to run tests
 script:
-- python tests/tests.py
+- python web/tests.py
