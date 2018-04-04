@@ -5,7 +5,7 @@ import requests
 class TestAll(unittest.TestCase):
 
 	def setUp(self):
-		app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://cs162_user:cs162_password@db/cs162'
+		app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
 		app.testing = True
 		self.app = app.test_client()
 		db.drop_all()
