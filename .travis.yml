@@ -32,4 +32,4 @@ before_script:
     - sleep 10
 # command to run tests
 script:
-- python web/tests.py
+- python tests/tests.py
